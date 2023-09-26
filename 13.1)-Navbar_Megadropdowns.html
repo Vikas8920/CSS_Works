@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Mega Dropdowns</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,300;1,400&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: gray;
+        }
+        :root{
+            --nav-back-color:rgb(43, 42, 42);
+            --nav-text-color:white;
+            --drop-text-color:rgb(82, 79, 79);
+        }
+        header{
+            background-color: var(--nav-back-color);
+            min-height: 70px;
+            margin: 20px 28px 0px 20px;
+        }
+        .nav{
+            width: 100%;
+            margin: auto;
+        }
+        .menus{
+            float: left;
+            border: 1px solid black;
+        }
+        .menu .menus a{
+            display: block;
+            padding: 25px 14px;
+            text-decoration: none;
+            color: var(--nav-text-color);
+        }
+        .menu .menus a i{
+            display: inline-block;
+            margin: 0 10px;
+            color: var(--drop-text-color);
+        }
+        .menu a:hover{
+            background-color: blue;
+            color: white!important;
+        }
+        .dropdown-menu{
+            display: none;
+            width: 520px;
+            min-height: 200px;
+            background-color:var(--nav-text-color);
+            position: absolute;
+            padding-top: 30px;
+            padding-left: 10px;
+        }
+        .dropdown-menu .col{
+            float: left;
+            min-height: 250px;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu .col .dropdown-menus a{
+            line-height: normal;
+            padding: 10px;
+            padding-left: 10px;
+            color: var(--drop-text-color)
+        }
+        .dropdown-menu .col h3{
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        .border{
+            width: 200px;
+            border: 1px solid rgb(180, 177, 177);
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .dropdown-menu1{
+            display: none;
+            width: 240px;
+            min-height: 200px;
+            background-color:var(--nav-text-color);
+            position: absolute;
+            padding-top: 10px;
+        }
+        .dropdown1:hover .dropdown-menu1{
+            display: block;
+        }
+        .dropdown-menu1 .col1 .dropdown-menus1 a{
+            line-height: normal;
+            padding: 10px;
+            padding-left: 10px;
+            color: var(--drop-text-color)
+        }
+        .dropdown-menu2{
+            display: none;
+            width: 240px;
+            min-height: 150px;
+            background-color:var(--nav-text-color);
+            position: absolute;
+            left: 240px;
+            top: 165px;
+        }
+        .dropdown2:hover .dropdown-menu2{
+            display: block;
+        }
+        .dropdown-menu2 .col2 .dropdown-menus2 a{
+            line-height: normal;
+            padding: 10px;
+            padding-left: 10px;
+            color: var(--drop-text-color)
+        }
+        .dropdown-menu3{
+            display: none;
+            width: 240px;
+            min-height: 150px;
+            background-color:var(--nav-text-color);
+            position: absolute;
+            left: 240px;
+            top: 115px;
+        }
+        .dropdown3:hover .dropdown-menu3{
+            display: block;
+        }
+        .dropdown-menu3 .col3 .dropdown-menus3 a{
+            line-height: normal;
+            padding: 10px;
+            padding-left: 10px;
+            color: var(--drop-text-color)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+           <div class="menu">
+            <div class="menus"><a href=""><i class="fa fa-home"></i></a></div>
+            <div class="menus dropdown"><a href=""><i class="fa fa-bars"></i>Half menu<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="col">
+                <h3>Product Header</h3>
+                <div class="border"></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+              </div>
+              <div class="col">
+                <h3>Product Header</h3>
+                <div class="border"></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+                <div class="dropdown-menus"><a href=""><i class="fa fa-arrow-circle-right"></i>Submenu link style</a></div>
+              </div>
+            </div>
+            </div>
+            <div class="menus"><a href=""><i class="fa fa-bars"></i>Mega menu<i class="fa fa-caret-down"></i></a></div>
+            <div class="menus"><a href=""><i class="fa fa-th-large"></i>Product Images<i class="fa fa-caret-down"></i></a></div>
+            <div class="menus dropdown1"><a href=""><i class="fa fa-bars"></i>Dropdowns<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-menu1">
+                <div class="col1">
+                    <div class="dropdown-menus1"><a href=""><i class="fa fa-angle-right"></i>Website Design</a></div>
+                    <div class="dropdown-menus1"><a href=""><i class="fa fa-angle-right"></i>Ecommerce Solutions</a></div>
+                    <div class="dropdown-menus1"></i><a href=""><i class="fa fa-angle-right"></i>Application Development</a></div>
+                    <div class="dropdown-menus1"><a href=""><i class="fa fa-angle-right"></i>Website Development</a></div>
+                    <div class="dropdown-menus1 dropdown2"><a href=""><i class="fa fa-angle-right"></i>Open Source Development</a>
+                    <div class="dropdown-menu2">
+                        <div class="col2">
+                            <div class="dropdown-menus2"><a href=""><i class="fa fa-angle-right"></i>Submenu item 1</a></div>
+                            <div class="dropdown-menus2"><a href=""><i class="fa fa-angle-right"></i>Submenu item </a></div>
+                            <div class="dropdown-menus2"><a href=""><i class="fa fa-angle-right"></i>Submenu item 3</a></div>
+                            <div class="dropdown-menus2 dropdown3"><a href=""><i class="fa fa-angle-right"></i>Submenu item 4</a>
+                            <div class="dropdown-menu3">
+                                <div class="col3">
+                                    <div class="dropdown-menus3"><a href=""><i class="fa fa-angle-right"></i>Submenu item 1 Sub</a></div>
+                                    <div class="dropdown-menus3"><a href=""><i class="fa fa-angle-right"></i>Submenu item 2 Sub</a></div>
+                                    <div class="dropdown-menus3"><a href=""><i class="fa fa-angle-right"></i>Submenu item 3 Sub</a></div>
+                                    <div class="dropdown-menus3"><a href=""><i class="fa fa-angle-right"></i>Submenu item 4 Sub</a></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menus"><a href=""><i class="fa fa-bars"></i>Typography<i class="fa fa-caret-down"></i></a></div>
+            <div class="menus"><a href=""><i class="fa fa-th"></i>Grid System<i class="fa fa-caret-down"></i></a></div>
+            <div class="menus"><a href=""><i class="fa fa-telegram"></i>Contact Us<i class="fa fa-caret-down"></i></a></div>
+           </div>
+        </div>
+    </header>
+</body>
+</html>

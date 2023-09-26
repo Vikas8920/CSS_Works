@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,300;1,400&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        :root{
+            --dark:rgb(2, 2, 85);
+            --light:rgb(4, 150, 150);
+            --text:gray;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 1100px;
+            min-height: 600px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            width: 550px;
+            min-height: 600px;
+            background-color: var(--dark);
+            color: rgb(177, 172, 172);
+            position: relative;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .globe{
+            padding-top: 30px;
+            padding-left: 100px;
+            font-size: 40px;
+        }
+        .content h1{
+            color: white;
+            padding-top: 120px;
+            padding-left: 100px;
+            font-size: 35px;
+            line-height: 1.5;
+        }
+        .content .tags{
+            padding-left: 100px;
+            padding-top: 15px;
+        }
+        .content i{
+            padding-right: 10px;
+            color: var(--light);
+        }
+        .copy{
+           position: absolute;
+           left: 100px; 
+           bottom: 30px;
+           font-size: 11px
+        }
+        
+        .form{
+            width: 550px;
+            min-height: 600px;
+        }
+        .form h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+        }
+        .form .para1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            font-size: 14px;
+            color: var(--text);
+        }
+        .form .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button1{
+            width:150px;
+            height: 38px;
+            background: transparent;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding-bottom: 5px;
+        }
+        .btn{
+            background-color: blue;
+            color: white;
+        }
+        .form .button1{
+            margin-left: 10px;
+        }
+        .form .button1 img{
+            padding-right: 10px;
+        }
+        .form .button1 i{
+            padding-right: 10px;
+            font-size: 20px;
+        }
+        .borders{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 13px;
+        }
+        .border{
+            width: 125px;
+            height: 20px;
+            border-bottom: 1px solid rgb(226, 220, 220);
+        }
+        .form .border, .form span{
+            display: inline-block;
+        }
+        .borders span{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            color: var(--text);
+            font-size: 15px;
+        }
+        .para{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 125px;
+            padding-right: 200px;
+            padding-top: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .input-group{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding-left: 125px;
+            padding-right: 105px;
+            padding-top: 10px;
+        }
+        .input-group input{
+            width: 155px;
+            height: 38px;
+            border-radius: 4px;
+            border: none;
+            border: 1px solid gray;
+            outline: none;
+            padding-left: 10px;
+        }
+        .change input{
+            width: 320px;
+        }
+        .Check{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 12px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .para3{
+            font-size: 11px;
+            padding-left: 10px;
+            font-weight: bold;
+            color: gray;
+        }
+        .register{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 16px;
+            padding-left: 20px;
+        }
+        .register button{
+            width: 320px;
+            height: 38px;
+            border-radius: 4px;
+            border: none;
+            background-color: var(--light);
+            color: white;
+        }
+        .account{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+        }
+        .account p{
+            font-size: 13px;
+            color: rgb(78, 77, 77);
+            padding-left: 30px;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: var(--light);
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="globe">
+                <i class="fa fa-globe"></i>
+            </div>
+            <div class="content">
+                <h1>The choice Of a new generation</h1>
+                <div class="tags"><i class="fa fa-tag"></i><span>It's Free.</span></div>
+                <div class="tags"><i class="fa fa-credit-card-alt"></i><span>No Credit Card.</span></div>
+                <div class="tags"><i class="fa fa-window-close"></i><span>Cancel Anytime.</span></div>
+            </div>
+            <span class="copy">&copy;2020 My Business Ltd. All rights reserved.</span>
+        </div>
+        <div class="form">
+            <h2>Get Started!</h2>
+            <p class="para1">Use your social profile to register</p>
+            <form action="" method="">
+                <div class="button">
+                    <button class="button1"><img src="google.png">Google</button>
+                    <button class="button1 btn"><i class="fa fa-facebook"></i>Facebook</button>
+                </div>
+                <div class="borders">
+                    <div class="border"></div><span>Or</span><div class="border"></div>
+                </div>
+                <div class="para">
+                    <p>Name</p>
+                    <p>Last Name</p>
+                </div>
+                <label class="input-group">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Last Name">
+                </label>
+                <div class="para">
+                    <p>Email</p>
+                </div>
+                <label class="input-group change">
+                    <input type="email" placeholder="you@email.com">
+                </label>
+                <div class="para">
+                    <p>Password</p>
+                </div>
+                <label class="input-group change">
+                    <input type="password" placeholder="Password">
+                </label>
+                <label class="Check">
+                    <input type="checkbox"><p class="para3">I agree to the <u>Terms & Conditions</u> and <u>Privacy Policy</u></p>
+                </label>
+                <div class="register">
+                    <button>Register</button>
+                </div>
+                <div class="account">
+                    <p>Already have an account?<a href="">Login here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

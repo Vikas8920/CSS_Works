@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            font-family:'Times New Roman', Times, serif;
+        }
+        /*Menu*/
+        .menu{
+           list-style: none;
+           padding-left: 0;
+           background-color: darkcyan;
+        }
+        .menu li{
+            display: inline-block;
+        }
+        .menu li a{
+            display: block;
+            padding: 16px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu li:hover{
+            background-color: rgb(75, 179, 179);
+        }
+        .dropdown1{
+            width: 200px;
+            background-color: darkcyan;
+            position: absolute;
+            padding: 0;
+            display: none;
+        }
+        .submenu1:hover .dropdown1{
+            display: block;
+        }
+        .submenu1 a i{
+            display:inline-block;
+            margin-left: 10px;
+        }
+        .submenu1 li{
+            display: block;
+        }
+      
+        
+        .dropdown2{
+            width: 200px;
+            background-color: darkcyan;
+            position: absolute;
+            padding: 0;
+            display: none;
+        }
+        .submenu2:hover .dropdown2{
+            display: block;
+        }
+        .submenu2 a i{
+            display:inline-block;
+            margin-left: 10px;
+        }
+        .submenu2 li{
+            display: block;
+        }
+
+        .dropdown3{
+            width: 200px;
+            background-color: darkcyan;
+            position: absolute;
+            padding: 0;
+            display: none;
+        }
+        .submenu3:hover .dropdown3{
+            display: block;
+        }
+        .submenu3 a i{
+            display:inline-block;
+            margin-left: 10px;
+        }
+        .submenu3 li{
+            display: block;
+        }
+
+        .dropdown4{
+            width: 200px;
+            background-color: darkcyan;
+            position: absolute;
+            padding: 0;
+            display: none;
+        }
+        .submenu4:hover .dropdown4{
+            display: block;
+        }
+        .submenu4 a i{
+            display:inline-block;
+            margin-left: 10px;
+        }
+        .submenu4 li{
+            display: block;
+        }
+        .image1{
+            height: 20px;
+            width: 20px;
+        }
+        .dropdown4 li a img{
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /*Overlay*/
+        .container{
+            width: 1000px;
+            height: 700px;
+            border: 1px solid black;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            position: relative;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+            margin-left: 13px;
+            margin-top: 15px;
+        }
+        .container .overlay{
+            width: 1000px;
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.507);
+            border-radius: 20px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        h1{
+            text-align: center;
+            margin-top: 150px;
+            padding-bottom: 20px;
+            font-size: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Menu-->
+    <nav>
+        <ul class="menu">
+            <li class="submenu1"><a href="">Home <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown1">
+                <li><a href="">Company Profile</a></li>
+                <li><a href="">Company Services</a></li>
+            </ul>
+            </li>
+            <li class="submenu2"><a href="">HTML & CSS<i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown2">
+                <li><a href="">Web Design</a></li>
+                <li><a href="">Login Form</a></li>
+                <li><a href="">Card Design</a></li>
+            </ul>
+            </li>
+            <li class="submenu3"><a href="">JavaScript<i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown3">
+                <li><a href="">Web Application</a></li>
+                <li><a href="">Animation</a></li>
+                <li><a href="">Web Security</a></li>
+            </ul>
+            </li>
+            <li class="submenu4"><a href="">Contact Us<i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown4">
+                <li><a href=""><img src="phone-call.png" class="image1">+91 0123456789</a></li>
+                <li><a href=""><img src="whatsapp.png" class="image1">+91 0123456789</a></li>
+            </ul></li>
+            <li><a href="">About Us</a></li>
+            </ul>
+        </ul>
+    </nav>
+
+    <!--Overlap-->
+    <h1>Image Gallery</h1>
+    <div class="container">
+        <img src="image1.png">
+        <img src="image2.jpg">
+        <img src="image3.png">
+        <img src="image4.png">
+        <img src="Image5.jpg">
+        <img src="image6.png">
+        <img src="image7.jpg">
+        <img src="image8.png">
+        <img src="image9.jpg">
+        <div class="overlay"></div>
+    </div>
+      
+</body>
+</html>

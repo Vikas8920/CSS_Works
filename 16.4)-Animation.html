@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .container{
+            width: 1280px;
+            min-height: 300px;
+            margin-left: -300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle{
+            width:350px;
+            height: 350px;
+            border-radius: 50%;
+            background-color: rgba(212, 53, 212, 0.795);
+            transform: translateX(450px);
+        }
+        .circle-1{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: skyblue;
+            animation: translate1 2s ease-in infinite alternate;
+        }
+        @keyframes translate1{
+            0%, 100%{
+                background-color: skyblue;
+                transform: translateX(0);
+            }
+            50%{
+                background-color: darkblue;
+                transform: translateX(300px);
+            }
+        }
+        .circle-2{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: darkblue;
+            animation: translate2 2s ease-in infinite alternate;
+        }
+        @keyframes translate2{
+            0%, 100%{
+                background-color: darkblue;
+                transform: translateX(0);
+            }
+            50%{
+                background-color: skyblue;
+                transform: translateX(-300px);
+            }
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div> 
+    </div>
+      
+    
+</body>
+</html>

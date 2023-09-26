@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Dropdowns</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color:aqua;
+        }
+        :root{
+            --nav-color:aqua;
+            --nav-color-hover:rgb(241, 241, 241);     
+            --text-color:black;
+            --dropdown-back-color:white;            
+        }
+        header{
+            width: 100%; 
+            background-color: var(--nav-color);
+        }
+        nav{
+            width: 1000px;
+            margin: auto;
+        }
+        .navbar{
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+        }
+        .navbar li{
+            float: left;
+        }
+        .navbar li a{
+            display: block;
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 10px 20px;
+        }
+        .navbar li a i{
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .navbar li:hover{
+            background-color: var(--nav-color-hover);
+        }
+        .dropdown-menu{
+            padding: 0;
+            list-style: none;
+            display: none;
+            position: absolute;
+        }
+        .dropdown-menu li{
+            float: none;
+            background-color: var(--dropdown-back-color);
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="dropdown"><a href="">Features<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="">Infrastructure</a></li>
+                    <li><a href="">Pre Build Templates</a></li>
+                    <li><a href="">Site Builder</a></li>
+                    <li><a href="">Visual Editor</a></li>
+                    <li><a href="">Multi-Currency View</a></li>
+                    <li><a href="">Pages and Files</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Product Filters</a></li>
+                    <li><a href="">Messages and Cookie bar</a></li>
+                    <li><a href="">Product Management</a></li>
+                </ul>
+                </li>
+                <li><a href="">Pricing</a></li>
+                <li class="dropdown"><a href="">Templates<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Health & Beauty</a></li>
+                        <li><a href="">Fashion & Clothing</a></li>
+                        <li><a href="">Food & Drink</a></li>
+                        <li><a href="">Home & Garden</a></li>
+                        <li><a href="">Furniture & Manufacturing</a></li>
+                        <li><a href="">Gifts, Toys & Games</a></li>
+                        <li><a href="">Electronnics</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="">Integrations<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Shipping Carriers</a></li>
+                        <li><a href="">Payment Gateways</a></li>
+                        <li><a href="">Marketing</a></li>
+                        <li><a href="">Analytics</a></li>
+                        <li><a href="">Accounting & Taxes</a></li>
+                        <li><a href="">CRM & Stock Management</a></li>
+                        <li><a href="">Productivity</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="">Customers<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Customer Stories</a></li>
+                        <li><a href="">Refer a Friend</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="">Resources<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Guides</a></li>
+                        <li><a href="">Insights & Blogs</a></li>
+                        <li><a href="">Product Onboarding</a></li>
+                        <li><a href="">Whtat's New</a></li>
+                        <li><a href="">Find a Specialist</a></li>
+                        <li><a href="">On-Demand Webinars</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Knowledge Base</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="">Support<i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Book a Demo</a></li>
+                        <li><a href="">Register For Live Webinars</a></li>
+                        <li><a href="">API Guide</a></li>
+                        <li><a href="">Developer Resources</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

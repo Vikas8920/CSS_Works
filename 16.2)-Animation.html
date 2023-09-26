@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 1000px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rotator{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-1{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 0.8;
+            animation: translate1 1.5s linear infinite;
+            animation-direction: alternate;
+        }
+        @keyframes translate1 {
+            0%{
+                transform: translate(100px, 100px);
+            }
+            50%{
+                transform: translateY(0);
+               
+            }
+            100%{
+                transform: translateY(100px);
+            }
+        }
+        .circle-2{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: skyblue;
+            opacity: 0.8;
+            animation: translate2 1.5s linear infinite;
+            animation-direction: alternate;
+        }
+        @keyframes translate2 {
+            0%{
+                transform: translate(-100px, 100px);
+            }
+            50%{
+                transform: translateY(0);
+               
+            }
+            100%{
+                transform: translateY(100px);
+            }
+        }
+        
+        .circle-3{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: green;
+            opacity: 0.8;
+            animation: translate3 1.5s linear infinite;
+            animation-direction: alternate;
+        }
+        @keyframes translate3 {
+            0%{
+                transform: translate(100px, -100px);
+            }
+            50%{
+                transform: translateY(0);
+               
+            }
+            100%{
+                transform: translateY(-100px);
+            }
+        }
+        .circle-4{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            opacity: 0.8;
+            animation: translate4 1.5s linear infinite;
+            animation-direction: alternate;
+        }
+        @keyframes translate4 {
+            0%{
+                transform: translate(-100px, -100px);
+            }
+            50%{
+                transform: translateY(0);
+               
+            }
+            100%{
+                transform: translateY(-100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="rotator">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+        </div>
+        <div class="rotator">
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+        </div>
+    </div>
+</body>
+</html>

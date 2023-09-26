@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            width:850px;
+            min-height: 200px;
+            border: 1px solid black;
+            margin: auto;
+            padding: 40px;
+            background-color: rgb(32, 30, 30);
+        }
+        h4{
+            color: white;
+        }
+        select{
+            background-color:  rgb(32, 30, 30);
+            color: white;
+            border-radius: 4px;
+        }
+        input{
+            background-color:  rgb(32, 30, 30);
+            outline: darkslategrey;
+            border-radius: 4px;
+            color: white;
+        }
+        #table, th, td{
+            border-bottom: 1px solid rgb(44, 43, 43);
+            border-collapse: collapse;
+            text-align: left;
+            color: white;
+        }
+        #table th, #table td{
+            padding: 10px 100px 10px 15px;
+        }
+        #table th{
+            background-color: black;
+        }
+        #table tr:nth-child(even){
+            background-color: black;
+        }
+        #table tr:hover{
+            background-color: blue;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 15px;
+        }
+        a:hover{
+            background-color: darkslategrey;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>
+            Show 
+        <select>
+            <option>10</option>
+            <option>9</option>
+            <option>8</option>
+            <option>7</option>
+            <option>6</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+        </select> 
+        entities
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        Search:<input type="search" name="search" class="search">
+        </h4>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tatyana Fitzpatrick</td>
+                    <td>London</td>
+                    <td>19</td>
+                    <td>$385,750</td>
+                </tr>
+                <tr>
+                    <td>Shou Itou</td>
+                    <td>Tokyo</td>
+                    <td>20</td>
+                    <td>$163,000</td>
+                </tr>
+                <tr>
+                    <td>Caesar Vance</td>
+                    <td>New York</td>
+                    <td>21</td>
+                    <td>$106,450</td>
+                </tr>
+                <tr>
+                    <td>Lael Greer</td>
+                    <td>London</td>
+                    <td>21</td>
+                    <td>$103,500</td>
+                </tr>
+                <tr>
+                    <td>Cedric Kelly</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>$433,060</td>
+                </tr>
+                <tr>
+                    <td>Gavin Cortez</td>
+                    <td>San Francisco</td>
+                    <td>22</td>
+                    <td>$235,500</td>
+                </tr>
+                <tr>
+                    <td>Quinn Flynn</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>$342,000</td>
+                </tr>
+                <tr>
+                    <td>Doris Wilder</td>
+                    <td>Sydney</td>
+                    <td>23</td>
+                    <td>$85,600</td>
+                </tr>
+                <tr>
+                    <td>Sonya Frost</td>
+                    <td>Edinburgh</td>
+                    <td>23</td>
+                    <td>$103,600</td>
+                </tr>
+                <tr>
+                    <td>Donna Snider</td>
+                    <td>New York</td>
+                    <td>27</td>
+                    <td>$112,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot>
+        </table>
+        <h4>Showing 1 to 10 of 57 entries1 row selected</h4>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="" style="color: darkslategrey;">Previous</a>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <a href="">Next</a>
+        
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+content: '';
+display: block;
+height: 20px;
+width: 20px;
+background-image: url('correct.png');
+background-size: cover;
+padding: 10px;
+}

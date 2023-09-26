@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Mega dropdowns</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,300;1,400&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        :root{
+            --back-color: rgb(218, 232, 236);
+            --Droptext-headcolor: black;
+            --text-color:rgb(82, 76, 76);
+            --text-hovercolor:blue;
+            --smalltext-color:rgb(170, 166, 166);
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color:var(--back-color) ;
+        }
+        header{
+            min-height: 80px; 
+        }
+        .nav{
+            width: 100%;
+            margin: auto;
+            position: relative;
+        }
+        .logo{
+            width: 230px;
+        }
+        .logo img{
+            width: 100%;
+            padding: 20px;
+            padding-right: 50px;
+        }
+        .logo, .menu{
+            float: left;
+        }
+        .menus{
+            float: left;
+        }
+        .menus a{
+            display: block;
+            padding: 30px 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bolder;
+        }
+        .menu .menus a i{
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bolder;
+        }
+        .menu a:hover{
+            color:var(--text-hovercolor)
+        }
+        .cart{
+            display: inline-block;
+            position: absolute;
+            right: 200px;
+            top: 27px;
+            color: var(--text-color);
+            font-size: 25px;
+        }
+        .button a{
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: var(--text-color);
+            background-color: var(--text-hovercolor);
+            height: 40px;
+            width: 150px;
+            padding: 10px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            padding-left: 25px;
+            font-weight: bolder;
+        }
+        .button a i{
+            margin-right: 5px;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu{
+            display: none;
+            width: 1000px;
+            min-height: 300px;
+            background-color: white;
+            position: absolute;
+            border-radius: 10px;
+        }
+        .dropdown-menu .col{
+            float: left;
+            min-height: 300px;
+            width: 33.333%;
+            padding-top: 20px;
+        }
+        .dropdown-menu .col .dropdown-menus a{
+            line-height: normal;
+            padding-top: 10px;
+            padding-left: 100px;
+            color: var(--smalltext-color);
+        }
+        .dropdown-menu .col h3{
+            line-height: 1.0;
+            margin-top: 10px;
+            padding-left: 100px;
+        }
+        .view{
+            background-color: rgb(207, 231, 241);
+            width: 250px;
+            height: 80px;
+            margin-left: 60px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .dropdown-menu .col .dropdown-menus .view{
+            color: blue;
+            padding-top: 30px;
+            padding-left: 60px;
+        }
+       
+        </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo"><a href=""><img src="weDevs-full-logo.png"></a></div>
+        <div class="menu">
+            <div class="menus dropdown"><a href="">Products<i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-menu">
+                <div class="col">
+                    <h3>Docan Multivendor</h3>
+                    <div class="dropdown-menus"><a href="">Build your dream multivendor marketplace</a></div>
+                    <h3>WP Project Manager Pro</h3>
+                    <div class="dropdown-menus"><a href="">Project Management tool for your project</a></div>
+                    <h3>Appsero</h3>
+                    <div class="dropdown-menus"><a href="">WP Analytics, Licensing & Deployment Tool</a></div>
+                </div>
+                <div class="col">
+                    <h3>WP User Frontend Pro</h3>
+                    <div class="dropdown-menus"><a href="">Ultimate Frontend Solution for Wordpress</a></div>
+                    <h3>weMail</h3>
+                    <div class="dropdown-menus"><a href="">Make Email Marketing simplified with Wordpress</a></div>
+                    <h3>wePOS</h3>
+                    <div class="dropdown-menus"><a href="">Fastest POS System for WooCommerce</a></div>
+                </div>
+                <div class="col">
+                    <h3>Happy Addons</h3>
+                    <div class="dropdown-menus"><a href="">Powerful Elementor widgets to create websites</a></div>
+                    <h3>WP ERP</h3>
+                    <div class="dropdown-menus"><a href="">Automate your Business or Company Operation</a></div>
+                    <div class="dropdown-menus"><a href="" class="view">View all products<i class="fa fa-long-arrow-right"></i></a></div>
+                </div>
+            </div>
+            </div>
+            <div class="menus"><a href="">Blog</a></div>
+            <div class="menus"><a href="">About</a></div>
+            <div class="menus"><a href="">Docs</a></div>
+            <div class="menus"><a href="">Contact Us</a></div>
+        </div>
+        <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="button"><a href=""><i class="fa fa-user"></i>My Account</a></div>
+        
+        </div>
+       
+    </header>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxes</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            width: 1280px;
+            min-height: 500px;
+            margin: auto; 
+        }
+        .inner-container1{
+            width: 1280px;
+            height: 150px;
+            display: flex;
+            padding: 10px;
+            column-gap: 100px;
+        }
+        .item1{
+            flex-basis: 10%;
+            background-color: green;
+            border: 4px solid black;
+            border-radius: 4px;
+        }
+        .i2{
+            flex-basis: 80%;
+        }
+        .i3{
+            flex-basis: 10%;
+        }
+        .c2{
+            column-gap: 30px;
+            padding-top: 20px;
+        }
+        .i4{
+            flex-basis: 70%;
+        }
+        .i5{
+            flex-basis: 10%;
+        }
+        .i6{
+            flex-basis: 20%;
+        }
+        .i7{
+            flex-basis: 10%;
+        }
+        .i8{
+            flex-basis: 20%;
+        }
+        .i9{
+            flex-basis: 70%;
+        }
+        .c3{
+            column-gap: 30px;
+        }
+        .i10{
+            flex-basis: 25%;
+        }
+        .i11{
+            flex-basis: 12.5%;
+        }
+        .i12{
+            flex-basis: 25%;
+        }
+        .i13{
+            flex-basis: 12.5%;
+        }
+        .i14{
+            flex-basis: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container1">
+            <div class="item1"></div>
+            <div class="item1 i2"></div>
+            <div class="item1 i3"></div>
+        </div>
+        <div class="inner-container1 c2">
+            <div class="item1 i4"></div>
+            <div class="item1 i5"></div>
+            <div class="item1 i6"></div>
+        </div>
+        <div class="inner-container1 c2">
+            <div class="item1 i7"></div>
+            <div class="item1 i8"></div>
+            <div class="item1 i9"></div>
+        </div>
+        <div class="inner-container1 c2 c3">
+            <div class="item1 i10"></div>
+            <div class="item1 i11"></div>
+            <div class="item1 i12"></div>
+            <div class="item1 i13"></div>
+            <div class="item1 i14"></div>
+        </div>
+    </div>
+</body>
+</html>

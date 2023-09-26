@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        p{
+            padding: 30px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
+        .b1{
+            border-radius: 0;
+            background-color: red;
+        }
+        .b2{
+            border-radius: 0;
+            background-color: aqua;
+        }
+        .b3{
+            border-radius: 0;
+            background-color: skyblue;
+        }
+        .b4{
+            border-radius: 0;
+            background-color: purple;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .box p:hover{
+            transform: translateY(-10px);
+            transition: 500ms;
+            cursor: pointer;
+        }
+
+        .box:hover::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: orange;
+            z-index: -1;
+        }
+        .b1:hover::before{
+            background-color: red;
+        }
+        .b2:hover::before{
+            background-color: aqua;
+        }
+        .b3:hover::before{
+            background-color: skyblue;
+        }
+        .b4:hover::before{
+            background-color: purple;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"><p>H</p></div>
+    <div class="box b1"><p>G</p></div>
+    <div class="box b2"><p>I</p></div>
+    <div class="box b3"><p>P</p></div>
+    <div class="box b4"><p>L</p></div>
+</body>
+</html>

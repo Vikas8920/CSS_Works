@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mr-container{
+            position: relative;
+            width: 1140px;
+            margin: auto;
+            background-color: brown;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            overflow: hidden;
+        }
+        .content{
+            display: flex;
+            width: 6000px;
+            transform: translateX(1140px);
+            animation-name: move;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .content:hover{
+            animation-play-state: paused;
+        }
+        .content a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+           
+        }
+
+        @keyframes move {
+            from{
+                transform: translateX(1140px);
+            }
+            to{
+                transform: translateX(-1140px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mr-container">
+        <div class="content">
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+            <a href="">The commitment to name the country India is not a recent one, but exactly 74 years ago.</a>
+
+        </div>
+    </div>
+    
+</body>
+</html>

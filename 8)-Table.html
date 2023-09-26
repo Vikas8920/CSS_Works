@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1170px;
+            min-height: 200px;
+            border: 1px solid darkslategrey;
+            margin: auto;
+            padding: 30px;
+            background-color: rgb(18, 31, 31);
+        }
+        img{
+            width: 15px;
+            height: 15px;
+        }
+        #table, th, td{
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+            background-color: rgb(41, 40, 40);
+        }
+        #table th, #table td{
+            text-align: center;
+            padding: 10px 15px;
+            color: white;
+        }
+        .chevron{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th colspan="10" style="text-align:left;">21472 orders (15 await processing)</th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" name="c1"></th>
+                    <th>Order no.</th>
+                    <th>Country</th>
+                    <th>Client</th>
+                    <th>State</th>
+                    <th>Quant.</th>
+                    <th>Total Price <img src="info.png"></th>
+                    <th>Warrantly ext.</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="c2"></td>
+                    <td>3607019</td>
+                    <td><img src="france.png"></td>
+                    <td>Leslie Alexander</td>
+                    <td>To be Processed</td>
+                    <td>1</td>
+                    <td>$396.84</td>
+                    <td><img src="cross.png"></td>
+                    <td>Feb 14,2020 8:36:15</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c3"></td>
+                    <td>1926674</td>
+                    <td><img src="france.png"></td>
+                    <td>Ariene McCoy</td>
+                    <td>To be Processed</td>
+                    <td>1</td>
+                    <td>$406.27</td>
+                    <td><img src="cross.png"></td>
+                    <td>Apr 10,2020 4:06:47</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c4"></td>
+                    <td>9293729</td>
+                    <td><img src="france.png"></td>
+                    <td>Cody Fisher</td>
+                    <td>Awaiting shipment</td>
+                    <td>1</td>
+                    <td>$854.08</td>
+                    <td><img src="cross.png"></td>
+                    <td>Jan 13,2020 11:55:38</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c5"></td>
+                    <td>6619242</td>
+                    <td><img src="france.png"></td>
+                    <td>Ralph Edwards</td>
+                    <td>Awaiting shipment</td>
+                    <td>1</td>
+                    <td>$782.01</td>
+                    <td><img src="cross.png"></td>
+                    <td>May 18,2020 1:11:50</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c6"></td>
+                    <td>4500950</td>
+                    <td><img src="france.png"></td>
+                    <td>Cameron Williamson</td>
+                    <td>Awaiting shipment</td>
+                    <td>1</td>
+                    <td>$169.43</td>
+                    <td><img src="cross.png"></td>
+                    <td>May 06,2020 5:37:29</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c7"></td>
+                    <td>5513249</td>
+                    <td><img src="united-kingdom.png"></td>
+                    <td>Ronald Richards</td>
+                    <td>Awaiting shipment</td>
+                    <td>1</td>
+                    <td>$948.55</td>
+                    <td><img src="cross.png"></td>
+                    <td>May 03,2020 9:26:57</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c8"></td>
+                    <td>3411117</td>
+                    <td><img src="spain.png"></td>
+                    <td>Robert Fox</td>
+                    <td>Awaiting shipment</td>
+                    <td>1</td>
+                    <td>$450.54</td>
+                    <td><img src="cross.png"></td>
+                    <td>May 28,2020 3:19:40</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c9"></td>
+                    <td>2189409</td>
+                    <td><img src="france.png"></td>
+                    <td>Jerome Beil</td>
+                    <td>Awaiting shipment</td>
+                    <td>1</td>
+                    <td>$778.35</td>
+                    <td><img src="cross.png"></td>
+                    <td>May 15,2020 3:11:47</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c10"></td>
+                    <td>4842702</td>
+                    <td><img src="france.png"></td>
+                    <td>Guy Hawkins</td>
+                    <td>Awaiting shipment</td>
+                    <td>1</td>
+                    <td>$601.13</td>
+                    <td><img src="cross.png"></td>
+                    <td>Feb 15,2020 1:36:03</td>
+                    <td><img src="dots.png"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c11"></td>
+                    <td>6863863</td>
+                    <td><img src="spain.png"></td>
+                    <td>Savannah Nguyen</td>
+                    <td>Processed</td>
+                    <td>1</td>
+                    <td>$475.22</td>
+                    <td><img src="cross.png"></td>
+                    <td>Jan 31,2020 1:21:16</td>
+                    <td><img src="dots.png"></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="10"><img src="left-chevron.png" class="chevron"> &nbsp; &nbsp; 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; ...37 &nbsp; &nbsp; <img src="right-chevron.png" class="chevron"></td>
+                </tr>
+            </tbody>
+         </table>
+        
+    </div>
+</body>
+</html>

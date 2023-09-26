@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            min-height: 200px;
+            border: 1px solid black;
+            margin: auto;
+            padding:100px;
+            background-color:black;
+        }
+        h4{
+            color: white;
+        }
+        #table, th ,td{
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+        }
+        #table th, #table td{
+            padding: 5px 10px 10px 10px;
+            text-align:left;
+            background-color: rgb(28, 32, 32);
+            color: rgb(168, 153, 153);
+        }
+        p{
+            font-size: 15px;
+            color: white;
+            margin-top: 0px;
+        }
+        #table th{
+            background-color: black;
+        }
+        #table td:hover{
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>Table #8</h4>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="c1"></th>
+                    <th>Order</th>
+                    <th>Name</th>
+                    <th>Occupation</th>
+                    <th>Contact</th>
+                    <th>Education</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="c2"></td>
+                    <td>1392</td>
+                    <td>James Yates</td>
+                    <td>Web Designer<p>Far far away, behind the word mountains</p></td>
+                    <td>+63 983 0962 971</td>
+                    <td>NY University</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c3" checked></td>
+                    <td>4616</td>
+                    <td>Mathew Wasil</td>
+                    <td>Graphic Designer<p>Far far away, behind the word mountains</p></td>
+                    <td>+02 020 3994 929</td>
+                    <td>London College</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c4"></td>
+                    <td>9841</td>
+                    <td>Sampson Murphy</td>
+                    <td>Mobile Dev<p>Far far away, behind the word mountains</p></td>
+                    <td>+01 352 1125 0192</td>
+                    <td>Senior High</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c5"></td>
+                    <td>9548</td>
+                    <td>Gaspar Semenov</td>
+                    <td>Illustrator<p>Far far away, behind the word mountains</p></td>
+                    <td>+92 020 3994 929</td>
+                    <td>College</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c6" checked></td>
+                    <td>4616</td>
+                    <td>Mathew Wasil</td>
+                    <td>Graphic Designer<p>Far far away, behind the word mountains</p></td>
+                    <td>+02 020 3994 929</td>
+                    <td>London College</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c7"></td>
+                    <td>9841</td>
+                    <td>Sampson Murphy</td>
+                    <td>Mobile Dev<p>Far far away, behind the word mountains</p></td>
+                    <td>+01 352 1125 0192</td>
+                    <td>Senior High</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="c8"></td>
+                    <td>9548</td>
+                    <td>Gaspar Semenov</td>
+                    <td>Illustrator<p>Far far away, behind the word mountains</p></td>
+                    <td>+92 020 3994 929</td>
+                    <td>College</td>
+                </tr>  
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

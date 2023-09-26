@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightyellow;
+        }
+        .container{
+            width: 400px;
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .blink{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name: blink;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes blink{
+            from{
+                opacity: 0;
+                transform: scale(2);
+            }
+            to{
+                opacity: 1;
+                transform: scale(4);
+            }
+        }
+        .b1{
+            position: absolute;
+            left: 170px;
+        }
+        .b2{
+            position: absolute;
+            right: 170px;
+        }
+        .b3{
+            position: absolute;
+            left: 140px;
+        }
+        .b4{
+            position: absolute;
+            right: 140px;
+        }
+        .b5{
+            position: absolute;
+            left: 110px;
+        }
+        .b6{
+            position: absolute;
+            right: 110px;
+        }
+        .b7{
+            position: absolute;
+            top: 70px;
+        }
+        .b8{
+            position: absolute;
+            bottom: 70px;
+        }
+        .b9{
+            position: absolute;
+            top: 40px;
+        }
+        .b10{
+            position: absolute;
+            bottom: 40px;
+        }
+        .b11{
+            position: absolute;
+            top: 10px;
+        }
+        .b12{
+            position: absolute;
+            bottom: 10px;
+        }
+        .b13{
+            position: absolute;
+            top: -20px;
+        }
+        .b14{
+            position: absolute;
+            bottom: -20px;
+        }
+        .b15{
+            position: absolute;
+            right: 80px;
+        }
+        .b16{
+            position: absolute;
+            left: 80px;
+        }
+        .b17{
+            position: absolute;
+            top: -20px;
+            right: 80px;
+        }
+        .b18{
+            position: absolute;
+            top: -20px;
+            right: 110px;
+        }
+        .b19{
+            position: absolute;
+            top: -20px;
+            right: 140px;
+        }
+        .b20{
+            position: absolute;
+            top: -20px;
+            right: 170px;
+        }
+        .b21{
+            position: absolute;
+            bottom: -20px;
+            left: 170px;
+        }
+        .b22{
+            position: absolute;
+            bottom: -20px;
+            left: 140px;
+        }
+        .b23{
+            position: absolute;
+            bottom: -20px;
+            left: 110px;
+        }
+        .b24{
+            position: absolute;
+            bottom: -20px;
+            left: 80px;
+        }
+        .b25{
+            position: absolute;
+            top: 70px;
+            left: 80px;
+        }
+        .b26{
+            position: absolute;
+            top: 40px;
+            left: 80px;
+        }
+        .b27{
+            position: absolute;
+            top: 10px;
+            left: 80px;
+        }
+        .b28{
+            position: absolute;
+            top: -20px;
+            left: 80px;
+        }
+        .b29{
+            position: absolute;
+            bottom: -20px;
+            right: 80px;
+        }
+        .b30{
+            position: absolute;
+            bottom: 10px;
+            right: 80px;
+        }
+        .b31{
+            position: absolute;
+            bottom: 40px;
+            right: 80px;
+        }
+        .b32{
+            position: absolute;
+            bottom: 70px;
+            right: 80px;
+        }
+        .b33{
+            position: absolute;
+            bottom: 40px;
+            right: 135px;
+        }
+        .b34{
+            position: absolute;
+            top: 40px;
+            right: 135px;
+        }
+        .b35{
+            position: absolute;
+            top: 40px;
+            left: 135px;
+        }
+        .b36{
+            position: absolute;
+            bottom: 40px;
+            left: 135px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blink"></div>
+        <div class="blink b1"></div>
+        <div class="blink b2"></div>
+        <div class="blink b3"></div>
+        <div class="blink b4"></div>
+        <div class="blink b5"></div>
+        <div class="blink b6"></div>
+        <div class="blink b7"></div>
+        <div class="blink b8"></div>
+        <div class="blink b9"></div>
+        <div class="blink b10"></div>
+        <div class="blink b11"></div>
+        <div class="blink b12"></div>
+        <div class="blink b13"></div>
+        <div class="blink b14"></div>
+        <div class="blink b15"></div>
+        <div class="blink b16"></div>
+        <div class="blink b17"></div>
+        <div class="blink b18"></div>
+        <div class="blink b19"></div>
+        <div class="blink b20"></div>
+        <div class="blink b21"></div>
+        <div class="blink b22"></div>
+        <div class="blink b23"></div>
+        <div class="blink b24"></div>
+        <div class="blink b25"></div>
+        <div class="blink b26"></div>
+        <div class="blink b27"></div>
+        <div class="blink b28"></div>
+        <div class="blink b29"></div>
+        <div class="blink b30"></div>
+        <div class="blink b31"></div>
+        <div class="blink b32"></div>
+        <div class="blink b33"></div>
+        <div class="blink b34"></div>
+        <div class="blink b35"></div>
+        <div class="blink b36"></div>
+    </div>
+    <div class="container">
+        <div class="blink"></div>
+        <div class="blink b1"></div>
+        <div class="blink b2"></div>
+        <div class="blink b3"></div>
+        <div class="blink b4"></div>
+        <div class="blink b5"></div>
+        <div class="blink b6"></div>
+        <div class="blink b7"></div>
+        <div class="blink b8"></div>
+        <div class="blink b9"></div>
+        <div class="blink b10"></div>
+        <div class="blink b11"></div>
+        <div class="blink b12"></div>
+        <div class="blink b13"></div>
+        <div class="blink b14"></div>
+        <div class="blink b15"></div>
+        <div class="blink b16"></div>
+        <div class="blink b17"></div>
+        <div class="blink b18"></div>
+        <div class="blink b19"></div>
+        <div class="blink b20"></div>
+        <div class="blink b21"></div>
+        <div class="blink b22"></div>
+        <div class="blink b23"></div>
+        <div class="blink b24"></div>
+        <div class="blink b25"></div>
+        <div class="blink b26"></div>
+        <div class="blink b27"></div>
+        <div class="blink b28"></div>
+        <div class="blink b29"></div>
+        <div class="blink b30"></div>
+        <div class="blink b31"></div>
+        <div class="blink b32"></div>
+        <div class="blink b33"></div>
+        <div class="blink b34"></div>
+        <div class="blink b35"></div>
+        <div class="blink b36"></div>
+    </div>
+    <div class="container">
+        <div class="blink"></div>
+        <div class="blink b1"></div>
+        <div class="blink b2"></div>
+        <div class="blink b3"></div>
+        <div class="blink b4"></div>
+        <div class="blink b5"></div>
+        <div class="blink b6"></div>
+        <div class="blink b7"></div>
+        <div class="blink b8"></div>
+        <div class="blink b9"></div>
+        <div class="blink b10"></div>
+        <div class="blink b11"></div>
+        <div class="blink b12"></div>
+        <div class="blink b13"></div>
+        <div class="blink b14"></div>
+        <div class="blink b15"></div>
+        <div class="blink b16"></div>
+        <div class="blink b17"></div>
+        <div class="blink b18"></div>
+        <div class="blink b19"></div>
+        <div class="blink b20"></div>
+        <div class="blink b21"></div>
+        <div class="blink b22"></div>
+        <div class="blink b23"></div>
+        <div class="blink b24"></div>
+        <div class="blink b25"></div>
+        <div class="blink b26"></div>
+        <div class="blink b27"></div>
+        <div class="blink b28"></div>
+        <div class="blink b29"></div>
+        <div class="blink b30"></div>
+        <div class="blink b31"></div>
+        <div class="blink b32"></div>
+        <div class="blink b33"></div>
+        <div class="blink b34"></div>
+        <div class="blink b35"></div>
+        <div class="blink b36"></div>
+    </div>
+</body>
+</html>

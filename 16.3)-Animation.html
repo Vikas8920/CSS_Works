@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 1200px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            width: 250px;
+            border: 15px solid rgb(11, 143, 88);
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: rotator1 2s linear infinite;
+            animation-direction:alternate;
+        }
+        @keyframes rotator1{
+            0%{
+               transform: rotate(0deg) scale(1);
+            }
+            100%{
+                transform: rotate(360deg) scale(1.5);
+            }
+        }
+        .circle-2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            background-color: rgb(192, 192, 192);
+            transform: translateX(-235px);
+        }
+        .circle-3{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(54, 138, 153);
+            animation: rotator2 1.2s linear infinite alternate;
+        }
+        @keyframes rotator2{
+            from{
+               transform: scale(2);
+            }
+            to{
+                transform: scale(4);
+            }
+        }
+        .circle{
+            width: 250px;
+            height: 250px;
+            background-color: magenta;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .circle-4{
+            width: 50px;
+             height: 50px;
+             background-color: white;
+             border-radius: 50%;
+             animation: scale 1.5s linear infinite alternate;
+             transition: 500ms;
+        }
+        @keyframes scale{
+            from{
+               transform: scale(0.5);
+            }
+            to{
+                transform: scale(6);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle-1"></div>
+        <div class="circle-2">
+            <div class="circle-3"></div>
+        </div>
+        <div class="circle">
+            <div class="circle-4"></div>
+            <div class="circle-4"></div>
+        </div>
+    </div>
+</body>
+</html>

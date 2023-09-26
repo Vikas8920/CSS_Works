@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Mega Dropdowns</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,300;1,400&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(190, 215, 224);
+        }
+        :root{
+            --nav-text-color:rgb(26, 26, 26);
+            --nav-back-color:rgb(231, 222, 222);
+            --drop-heading-color:rgb(61, 124, 241);
+            --drop-back-color:white;
+            --drop-text-color:gray;
+        }
+        header{
+            min-height: 70px;
+            background-color: var(--nav-back-color);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin: 0 20px;
+        }
+        .nav{
+            width: 100%;
+            margin: auto;
+        }
+        .menus, h2{
+            float: left;
+        }
+        .menu a{
+            display: block;
+            text-decoration: none;
+            color: var(--nav-text-color);
+            font-weight: bolder;
+            padding: 25px 40px;
+        }
+        .menu h2{
+            padding: 15px;
+            color: gray;
+            
+        }
+        .menu a i{
+            margin-left: 50px;
+            font-weight: bolder;
+        }
+        .menu a:hover{
+            background-color: rgb(216, 211, 211);
+        }
+        .dropdown-menu{
+            display: none;
+            width: 1325px;
+            min-height: 300px;
+            position: absolute;
+            left: 0;
+            margin: 5px 20px;
+            background-color: var(--drop-back-color);
+            border-radius: 5px;
+        }
+        .dropdown-menu .col{
+            float: left;
+            min-height: 300px;
+            width:330px;
+        }
+        .dropdown-menu .col .dropdown-menus a{
+            line-height: 0.8;
+            padding: 10px 0 5px 40px;
+            color: var(--drop-text-color);
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu .col h3{
+            color: var(--drop-heading-color);
+            padding: 30px 0 0 40px;
+            font-weight: bolder;
+        }
+        .border{
+            width: 280px;
+            border-bottom: 1px solid rgb(221, 220, 220);
+            margin-left: 20px;
+            margin-top: 15px;
+            margin-bottom: -10px;
+        }
+        .email{
+            margin-left: 40px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .button{
+            height: 30px;
+            width: 177px;
+            margin-left: 40px;
+            margin-top: 5px;
+            background-color: var(--drop-heading-color);
+            border-radius: 5px;
+            color: white;
+        }
+        .box1{
+            background-color: var(--drop-heading-color);
+            width: 300px;
+            height: 100px;
+            margin-left: 15px;
+            margin-top: 10px;
+            border: 1px solid var(--drop-heading-color);
+            color: white;
+        }
+        .text1{
+            margin-left: -25px;
+            margin-top: 5px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .box2{
+            height: 30px;
+            width: 70px;
+            margin-left: 15px;
+            background-color: var(--drop-heading-color);
+            color: white;
+            border: 1px solid var(--drop-heading-color);
+            border-radius: 5px;
+        }
+        .box3{
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .dropdown-menu .col .dropdown-menus .box2 i{
+            margin-left: 10px;
+        }
+        .dropdown-menu .col .dropdown-menus .box2 .box3 i{
+            margin-left: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="menu">
+                <h2>Shop The Warehouse:</h2>
+                <div class="menus dropdown"><a href="">Shop by Category<i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <div class="col">
+                        <h3>Hottest Products</h3>
+                        <div class="dropdown-menus"><button class="box1">New Collection</button></div>
+                        <div class="dropdown-menus"><a href="" class="text1">Some dress floral prints</a></div>
+                        <div class="dropdown-menus"><button class="box2">49,99<i class="fa fa-euro"></i></button><button class="box3"><i class="fa fa-heart"></i>Add to Cart</button></div>
+                        <div class="dropdown-menus"><button class="box1">New Collection</button></div>
+                        <div class="dropdown-menus"><a href="" class="text1">Some dress floral prints</a></div>
+                        <div class="dropdown-menus"><button class="box2">49,99<i class="fa fa-euro"></i></button><button class="box3"><i class="fa fa-heart"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="col">
+                        <h3>Scanners</h3>
+                        <div class="dropdown-menus"><a href="">Police, Fire & EMS</a></div>
+                        <div class="dropdown-menus"><a href="">Digital Scanners</a></div>
+                        <div class="dropdown-menus"><a href="">Truck Tracker Scanners</a></div>
+                        <div class="dropdown-menus"><a href="">Nascar Scanners</a></div>
+                        <div class="dropdown-menus"><a href="">Base/Mobile Scanners</a></div>
+                        <div class="dropdown-menus"><a href="">Portable/Handheld Scanners</a></div>
+                        <div class="dropdown-menus"><a href="">Accessories</a></div>
+                        <div class="dropdown-menus"><a href="">View All</a></div>
+                        <div class="border"></div>
+                        <h3>CB Radios</h3>
+                        <div class="dropdown-menus"><a href="">View All</a></div>
+                        <div class="border"></div>
+                        <h3>Two Way Radios</h3>
+                        <div class="dropdown-menus"><a href="">View All</a></div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col">
+                        <h3>Marine Radios</h3>
+                        <div class="dropdown-menus"><a href="">VHF Fixed Mount</a></div>
+                        <div class="dropdown-menus"><a href="">VHF Handheld</a></div>
+                        <div class="dropdown-menus"><a href="">Accessories</a></div>
+                        <div class="dropdown-menus"><a href="">View All</a></div>
+                        <div class="border"></div>
+                        <h3>Video Surveillance</h3>
+                        <div class="dropdown-menus"><a href="">Systems</a></div>
+                        <div class="dropdown-menus"><a href="">Baby Monitors</a></div>
+                        <div class="dropdown-menus"><a href="">Additional Cameras</a></div>
+                        <div class="dropdown-menus"><a href="">View All</a></div>
+                        <div class="border"></div>
+                        <h3>Radar Detectors</h3>
+                        <div class="dropdown-menus"><a href="">View All</a></div>
+                    </div>
+                    <div class="col">
+                        <h3>Accessories</h3>
+                        <div class="dropdown-menus"><a href="">For Scanners</a></div>
+                        <div class="dropdown-menus"><a href="">For CB Radios</a></div>
+                        <div class="dropdown-menus"><a href="">For Marine Radios</a></div>
+                        <div class="dropdown-menus"><a href="">View All</a></div>
+                        <div class="border"></div>
+                        <h3>Newsletter</h3>
+                        <div class="dropdown-menus"><a href="">info</a></div>
+                        <div class="dropdown-menus"><input type="email" name="email" placeholder="Enter email" class="email"></div>
+                        <div class="dropdown-menus"><button class="button">Sign in</button></div>
+                    </div>
+                </div>
+                </div>
+                <div class="menus"><a href="">Shop by Model<i class="fa fa-angle-down"></i></a></div>
+                <div class="menus"><a href="">Our Services<i class="fa fa-angle-down"></i></a></div>
+                <div class="menus"><a href="">Help & Support</a></div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
